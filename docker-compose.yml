@@ -3,7 +3,7 @@ version: '3'
 services:
   mypython:
     build: ./
-    command: python challenge-A.py challenge-B.py
+    command: bash -c "python challenge-A.py && python challenge-B.py"
     volumes: 
       - ./:/usr/src/app
     
